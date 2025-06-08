@@ -1,0 +1,185 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.header {
+    background: linear-gradient(135deg, #4db6ac, #26a69a);
+    color: white;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+    margin: 0 15px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.nav-link.active {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 8px 16px !important;
+}
+
+.date-section {
+    text-align: center;
+    margin: 30px 0;
+    color: #666;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lessons-nav {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-tab {
+    background: #e9ecef;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #6c757d;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.lesson-tab:hover {
+    background: #4db6ac;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.lesson-tab.active {
+    background: #26a69a;
+    color: white;
+}
+
+.lesson-info {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-code {
+    color: #666;
+    font-weight: bold;
+}
+
+.lesson-subject {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.add-homework-btn {
+    background: #4db6ac;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    transition: background 0.3s;
+}
+
+.add-homework-btn:hover {
+    background: #26a69a;
+    color: white;
+}
+
+.students-table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+    background: #4db6ac;
+    color: white;
+    padding: 15px;
+}
+
+.table thead th {
+    background: #4db6ac;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.table tbody td {
+    padding: 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.attendance-radio {
+    margin: 0 5px;
+}
+
+.attendance-radio input[type="radio"] {
+    margin: 0 3px;
+}
+
+.grade-select {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 60px;
+}
+
+.comment-input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.student-name {
+    font-weight: 500;
+}
+
+.gpa {
+    font-weight: bold;
+    color: #4db6ac;
+}
+
+.icons {
+    color: white;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.icons i {
+    margin: 0 10px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.icons i:hover {
+    opacity: 1;
+}

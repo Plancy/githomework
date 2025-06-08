@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index1.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <i class="fas fa-graduation-cap me-2"></i>
+                        StudyTracker
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <nav class="navbar-nav d-flex flex-row justify-content-center">
+                        <a href="#" class="nav-link active">Attendance</a>
+                        <a href="#" class="nav-link">Schedule</a>
+                        <a href="#" class="nav-link">Homework</a>
+                    </nav>
+                </div>
+                <div class="col-md-3 text-end">
+                    <div class="icons">
+                        <i class="fas fa-bell"></i>
+                        <i class="fas fa-user-circle"></i>
+                        <i class="fas fa-cog"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <!-- Date Section -->
+        <div class="date-section">
+            23 APRIL, TUESDAY
+        </div>
+
+        <!-- Lessons Navigation -->
+        <div class="lessons-nav">
+            <a href="#" class="lesson-tab">1 lesson</a>
+            <a href="#" class="lesson-tab">2 lesson</a>
+            <a href="#" class="lesson-tab">3 lesson</a>
+            <a href="#" class="lesson-tab">4 lesson</a>
+            <a href="#" class="lesson-tab">5 lesson</a>
+            <a href="#" class="lesson-tab">6 lesson</a>
+            <a href="#" class="lesson-tab">7 lesson</a>
+            <a href="#" class="lesson-tab active">8 lesson</a>
+        </div>
+
+        <!-- Lesson Info -->
+        <div class="lesson-info">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="lesson-code">ABC-1234</div>
+                    <div class="lesson-subject">HTML & CSS</div>
+                    <div class="lesson-topic text-muted">Lesson topic</div>
+                </div>
+                <div class="col-md-4 text-end">
+                    <button class="btn add-homework-btn" data-bs-toggle="modal" data-bs-target="#homeworkModal">
+                        <i class="fas fa-plus me-2"></i>
+                        Add homework
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Students Table -->
+        <div class="students-table">
+            <table class="table table-striped mb-0">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>GPA</th>
+                        <th>Is present</th>
+                        <th>Test</th>
+                        <th>Classwork</th>
+                        <th>Comment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="student-name">Ashton Hickman</td>
+                        <td class="gpa">10</td>
+                        <td>
+                            <div class="attendance-radio">
+                                <input type="radio" name="attendance1" id="present1" value="present">
+                                <label for="present1" class="text-success">●</label>
+                                <input type="radio" name="attendance1" id="late1" value="late">
+                                <label for="late1" class="text-warning">●</label>
+                                <input type="radio" name="attendance1" id="absent1" value="absent">
+                                <label for="absent1" class="text-danger">●</label>
+                            </div>
+                        </td>
+                        <td>
+                            <select class="grade-select">
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="grade-select">
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" class="comment-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="student-name">Mischa Roberson</td>
+                        <td class="gpa">9</td>
+                        <td>
+                            <div class="attendance-radio">
+                                <input type="radio" name="attendance2" id="present2" value="present">
+                                <label for="present2" class="text-success">●</label>
+                                <input type="radio" name="attendance2" id="late2" value="late">
+                                <label for="late2" class="text-warning">●</label>
+                                <input type="radio" name="attendance2" id="absent2" value="absent">
+                                <label for="absent2" class="text-danger">●</label>
+                            </div>
+                        </td>
+                        <td>
+                            <select class="grade-select">
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="grade-select">
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" class="comment-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="student-name">Jaydon Metcalfe</td>
+                        <td class="gpa">11</td>
+                        <td>
+                            <div class="attendance-radio">
+                                <input type="radio" name="attendance3" id="present3" value="present">
+                                <label for="present3" class="text-success">●</label>
+                                <input type="radio" name="attendance3" id="late3" value="late">
+                                <label for="late3" class="text-warning">●</label>
+                                <input type="radio" name="attendance3" id="absent3" value="absent">
+                                <label for="absent3" class="text-danger">●</label>
+                            </div>
+                        </td>
+                        <td>
+                            <select class="grade-select">
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="grade-select">
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" class="comment-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="student-name">Gary Jacobson</td>
+                        <td class="gpa">8</td>
+                        <td>
+                            <div class="attendance-radio">
+                                <input type="radio" name="attendance4" id="present4" value="present">
+                                <label for="present4" class="text-success">●</label>
+                                <input type="radio" name="attendance4" id="late4" value="late">
+                                <label for="late4" class="text-warning">●</label>
+                                <input type="radio" name="attendance4" id="absent4" value="absent">
+                                <label for="absent4" class="text-danger">●</label>
+                            </div>
+                        </td>
+                        <td>
+                            <select class="grade-select">
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="grade-select">
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" class="comment-input">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Homework Modal -->
+    <div class="modal fade" id="homeworkModal" tabindex="-1" aria-labelledby="homeworkModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" style="background: linear-gradient(135deg, #4db6ac, #26a69a); color: white;">
+                    <h5 class="modal-title" id="homeworkModalLabel">
+                        <i class="fas fa-plus-circle me-2"></i>
+                        Add Homework Assignment
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="homeworkForm">
+                        <div class="mb-3">
+                            <label for="homeworkTopic" class="form-label">
+                                <i class="fas fa-book me-2"></i>
+                                Topic Name
+                            </label>
+                            <input type="text" class="form-control" id="homeworkTopic"
+                                placeholder="Enter homework topic..." required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="homeworkDescription" class="form-label">
+                                <i class="fas fa-align-left me-2"></i>
+                                Description (Optional)
+                            </label>
+                            <textarea class="form-control" id="homeworkDescription" rows="3"
+                                placeholder="Add description or instructions..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-2"></i>
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                        style="background: #4db6ac; border-color: #4db6ac;">
+                        <i class="fas fa-save me-2"></i>
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

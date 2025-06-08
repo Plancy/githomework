@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index2.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <i class="fas fa-graduation-cap me-2"></i>
+                        StudyTracker
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <nav class="navbar-nav d-flex flex-row justify-content-center">
+                        <a href="#" class="nav-link">Attendance</a>
+                        <a href="#" class="nav-link">Schedule</a>
+                        <a href="#" class="nav-link active">Homework</a>
+                    </nav>
+                </div>
+                <div class="col-md-3 text-end">
+                    <div class="icons">
+                        <i class="fas fa-bell"></i>
+                        <i class="fas fa-user-circle"></i>
+                        <i class="fas fa-cog"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="homework-title">
+            HOMEWORK
+        </div>
+
+        <div class="filter-section">
+            <div class="row align-items-end">
+                <div class="col-md-4">
+                    <label class="form-label">Group</label>
+                    <select class="form-select filter-select">
+                        <option value="abc-1234" selected>ABC-1234</option>
+                        <option value="def-5678">DEF-5678</option>
+                        <option value="ghi-9012">GHI-9012</option>
+                        <option value="jkl-3456">JKL-3456</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Subject</label>
+                    <select class="form-select filter-select">
+                        <option value="html-css" selected>HTML & CSS</option>
+                        <option value="javascript">------</option>
+                        <option value="react">------</option>
+                        <option value="nodejs">------</option>
+                        <option value="python">------</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn show-btn w-100">
+                        <i class="fas fa-search me-2"></i>
+                        Show
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="homework-table">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Student</th>
+                        <th>HW 01</th>
+                        <th>HW 02</th>
+                        <th>HW 03</th>
+                        <th>HW 04</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="student-name">Ashton Hickman</td>
+                        <td>
+                            <i class="fas fa-file-alt file-icon" title="View submission"></i>
+                            <div class="mt-1">
+                                <span class="grade-display">10</span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="status-badge status-pending">Pending</span>
+                        </td>
+                        <td>
+                            <span class="status-badge status-submitted">Submitted</span>
+                        </td>
+                        <td>
+                            <i class="fas fa-file-pdf file-icon" title="View PDF"></i>
+                            <div class="mt-1">
+                                <span class="grade-display">10</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="student-name">Mischa Roberson</td>
+                        <td>
+                            <span class="status-badge status-submitted">Submitted</span>
+                        </td>
+                        <td>
+                            <i class="fas fa-link file-icon" title="View link"></i>
+                            <div class="mt-1">
+                                <span class="grade-display">9</span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="status-badge status-submitted">Submitted</span>
+                        </td>
+                        <td>
+                            <i class="fas fa-code file-icon" title="View code"></i>
+                            <div class="mt-1">
+                                <span class="grade-display">9</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="student-name">Jaydon Metcalfe</td>
+                        <td>
+                            <span class="status-badge status-submitted">Submitted</span>
+                        </td>
+                        <td>
+                            <span class="status-badge status-submitted">Submitted</span>
+                        </td>
+                        <td>
+                            <span class="status-badge status-submitted">Submitted</span>
+                        </td>
+                        <td>
+                            <span class="status-badge status-submitted">Submitted</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="student-name">Gary Jacobson</td>
+                        <td>
+                            <span class="status-badge status-submitted">Submitted</span>
+                        </td>
+                        <td>
+                            <span class="status-badge status-submitted">Submitted</span>
+                        </td>
+                        <td>
+                            <i class="fas fa-link file-icon" title="View link"></i>
+                            <div class="mt-1">
+                                <span class="grade-display">11</span>
+                            </div>
+                        </td>
+                        <td>
+                            <i class="fas fa-file-word file-icon" title="View document"></i>
+                            <div class="mt-1">
+                                <span class="grade-display">10</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
